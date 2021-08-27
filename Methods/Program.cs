@@ -5,14 +5,13 @@ namespace Methods
     class Program
     {
         static void Main(string[] args)
-         { /*
+         { 
             PrintNumbersFiveTimes();
             Console.WriteLine();
             PrintText("Kalle");
             Console.WriteLine();
             PrintNumbersFiveTimes();
-            */
-
+           
             //int result = MultiplyNumbers(3, 4);
             Console.WriteLine(MultiplyNumbers(3, 4));
         }

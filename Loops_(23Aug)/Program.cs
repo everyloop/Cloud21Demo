@@ -48,6 +48,24 @@ namespace Loops__23Aug_
             }
         }
 
+        static void ForEachLoop()
+        {
+            string text = "Hejsan";
+
+            foreach (char bokstav in text)
+            {
+                Console.WriteLine(bokstav);
+            }
+
+    
+            string[] strings = { "Hejsan", "hoppsan" };
+
+            foreach (string s in strings)
+            {
+                Console.WriteLine(s);
+            }
+        }
+        
         static void NestedForLoops()
         {
             for (int i = 1; i <= 4; i++)
