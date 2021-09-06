@@ -5,15 +5,34 @@ namespace Methods
     class Program
     {
         static void Main(string[] args)
-         { 
-            PrintNumbersFiveTimes();
+        {
+            int i = 0;
+
+            i += 10;
+
+            while (i < 100)
+            {
+                i++;
+            }
+
+            AddNumbers(5, 15);
+            AddNumbers(20);
+
+            string[] myItems = { "Hej", "hopp", "hejsan" };
+            PrintItems(5, "hej", "hejsan", "sdfsd");
             Console.WriteLine();
-            PrintText("Kalle");
-            Console.WriteLine();
-            PrintNumbersFiveTimes();
-           
-            //int result = MultiplyNumbers(3, 4);
-            Console.WriteLine(MultiplyNumbers(3, 4));
+        }
+        static void AddNumbers(int a = 5, int b = 100)
+        {
+            Console.WriteLine(a + b);
+        }
+
+        static void PrintItems(int i, params string[] items)
+        {
+            foreach (string s in items)
+            {
+                Console.WriteLine(s);
+            }
         }
 
         static void PrintNumbersFiveTimes()
@@ -29,14 +48,11 @@ namespace Methods
             Console.WriteLine(text);
         }
 
-        static void AddNumbers(int a, int b)
-        {
-            Console.WriteLine(a + b);
-        }
 
-        static int MultiplyNumbers(int a, int b)
+        static byte MultiplyNumbers(int a, int b)
         {
-            return a * b;
+            int myInt = 500;
+            return (byte)myInt;
         }
     }
 }
