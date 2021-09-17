@@ -34,12 +34,23 @@ namespace Arv
                 Console.WriteLine(animal.Name);
                 animal.Eat();
 
+                if (animal is Cat myCat)
+                {
+                    Console.WriteLine("This is a cat!");
+                    //(animal as Cat).SayMeow();
+                    myCat.SayMeow();
+                }
+
+                Console.WriteLine();
+/*
                 Cat cat = animal as Cat;
 
                 if (cat != null)
                 {
                     cat.SayMeow();
                 }
+
+                */
             }
         }
     }
