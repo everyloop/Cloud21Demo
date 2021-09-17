@@ -5,7 +5,7 @@ namespace Arv
     class Program
     {
         static void Main(string[] args)
-        {
+        {/*
             Cat myCat = new Cat() { Name = "Felix" };
             myCat.Eat();
             myCat.SayMeow();
@@ -17,6 +17,30 @@ namespace Arv
             myDog.Eat();
             myDog.SayWoff();
             myDog.Drink();
+
+            Console.WriteLine();
+
+            Console.WriteLine(myDog);
+            */
+
+
+            Animal[] animals = new Animal[3];
+            animals[0] = new Cat() { Name = "Felix" };
+            animals[1] = new Dog() { Name = "Karo" };
+            animals[2] = new Cat() { Name = "Findus" };
+
+            foreach (Animal animal in animals)
+            {
+                Console.WriteLine(animal.Name);
+                animal.Eat();
+
+                Cat cat = animal as Cat;
+
+                if (cat != null)
+                {
+                    cat.SayMeow();
+                }
+            }
         }
     }
 
@@ -41,7 +65,7 @@ namespace Arv
 
         public void SayWoff()
         {
-            Console.WriteLine("Woff!");
+            Console.WriteLine($"{Name} says Woff!");
         }
 
         public override void Drink()
@@ -54,6 +78,10 @@ namespace Arv
             Console.WriteLine($"The dog {Name} is done drinking!");
         }
 
+        public override string ToString()
+        {
+            return $"This is {Name}!";
+        }
     }
 
 
@@ -61,7 +89,7 @@ namespace Arv
     {
         public void SayMeow()
         {
-            Console.WriteLine("MEOW!");
+            Console.WriteLine($"{Name} says MEOW!");
         }
 
         public override void Eat()
