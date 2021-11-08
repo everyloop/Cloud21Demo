@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnonymousTypes", "Anonymous
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQdemo", "LINQdemo\LINQdemo.csproj", "{2230CA8C-E4FB-4B1F-9772-C031BF91A958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDBDemo", "MongoDBDemo\MongoDBDemo.csproj", "{011572B1-DB31-43F4-B0D0-4E531CAC6C80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDBDemo", "MongoDBDemo\MongoDBDemo.csproj", "{011572B1-DB31-43F4-B0D0-4E531CAC6C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsDemo", "WinFormsDemo\WinFormsDemo.csproj", "{645C1909-317C-4ECC-B0C6-442C2BB8114F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{011572B1-DB31-43F4-B0D0-4E531CAC6C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{011572B1-DB31-43F4-B0D0-4E531CAC6C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{011572B1-DB31-43F4-B0D0-4E531CAC6C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645C1909-317C-4ECC-B0C6-442C2BB8114F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645C1909-317C-4ECC-B0C6-442C2BB8114F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645C1909-317C-4ECC-B0C6-442C2BB8114F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645C1909-317C-4ECC-B0C6-442C2BB8114F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
