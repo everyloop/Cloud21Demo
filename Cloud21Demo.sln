@@ -37,9 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQdemo", "LINQdemo\LINQde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDBDemo", "MongoDBDemo\MongoDBDemo.csproj", "{011572B1-DB31-43F4-B0D0-4E531CAC6C80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsDemo", "WinFormsDemo\WinFormsDemo.csproj", "{645C1909-317C-4ECC-B0C6-442C2BB8114F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsDemo", "WinFormsDemo\WinFormsDemo.csproj", "{645C1909-317C-4ECC-B0C6-442C2BB8114F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsControlsOverview", "WinFormsControlsOverview\WinFormsControlsOverview.csproj", "{78ED4787-F2D6-4CEE-87C6-BBB32D232C1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsControlsOverview", "WinFormsControlsOverview\WinFormsControlsOverview.csproj", "{78ED4787-F2D6-4CEE-87C6-BBB32D232C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceDemo", "InterfaceDemo\InterfaceDemo.csproj", "{55272253-FF2F-4600-ABB8-1C004372E9EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{78ED4787-F2D6-4CEE-87C6-BBB32D232C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78ED4787-F2D6-4CEE-87C6-BBB32D232C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78ED4787-F2D6-4CEE-87C6-BBB32D232C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55272253-FF2F-4600-ABB8-1C004372E9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55272253-FF2F-4600-ABB8-1C004372E9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55272253-FF2F-4600-ABB8-1C004372E9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55272253-FF2F-4600-ABB8-1C004372E9EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
