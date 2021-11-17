@@ -46,8 +46,11 @@ namespace WinFormsMultiForms
             using (var editForm = new Form2())
             {
                 editForm.ButtonName = (sender as Button).Text;
-                editForm.ShowDialog();
-                (sender as Button).Text = editForm.ButtonName;
+                
+                if (editForm.ShowDialog() == DialogResult.OK)
+                {
+                    (sender as Button).Text = editForm.ButtonName;
+                }
             }
         }
     }
