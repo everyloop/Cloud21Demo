@@ -12,37 +12,43 @@ namespace WinFormsMultiForms
 {
     public partial class Form1 : Form
     {
-        private int buttonCount = 0;
-        // private Button activeButton;
         public Form1()
         {
             InitializeComponent();
-            //activeButton = button1;
+            GenerateButtons();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void GenerateButtons()
         {
-            (sender as Button).Enabled = false;
-
-            var myButton = new Button()
+            for (int y = 0; y < 10 ; y++)
             {
-                Location = new System.Drawing.Point(212, 88 + 50 + buttonCount * 50),
-                Name = "b" + buttonCount,
-                Size = new System.Drawing.Size(94, 29),
-                TabIndex = 0,
-                Text = "b" + buttonCount,
-                UseVisualStyleBackColor = true
-            };
+                for (int x = 0; x < 10; x++)
+                {
+                    var myButton = new Button()
+                    {
+                        Location = new Point(x * 60 + 10, y * 50 + 10),
+                        Text = (y * 10 + x).ToString(),
+                        Size = new Size(55, 29),
+                        TabIndex = y * 10 + x
+                    };
 
-            myButton.Click += new System.EventHandler(this.button1_Click);
-            this.Controls.Add(myButton);
-
-            buttonCount++;
+                    this.Controls.Add(myButton);
+                    myButton.Click += MyButton_Click;
+                }
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void MyButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello world!");
+            //MessageBox.Show((sender as Button).Text);
+            //(sender as Button).Visible = false;
+
+            using (var editForm = new Form2())
+            {
+                editForm.ButtonName = (sender as Button).Text;
+                editForm.ShowDialog();
+                (sender as Button).Text = editForm.ButtonName;
+            }
         }
     }
 
